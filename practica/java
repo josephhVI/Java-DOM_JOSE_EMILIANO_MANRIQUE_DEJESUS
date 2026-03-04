@@ -5,7 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miercoles 4</title>
 </head>
+
+        <style>
+            .login-container {
+                width: 100px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: gray;
+                animation: slide-in 0.5s ease;
+            }
+
+            .login-container-hide{
+                left: -310px;
+                animation: slide-out 0.5s ease;
+            }
+            @keyframes slide-in {
+                from{ left: -310px; }
+                to{ left: 0; }
+            }
+            @keyframes slide-out {
+                from{ left: 0; }
+                to{ left: -310px; }
+            }
+        </style>
 <body>
-    
+    <h1>My Page</h1>
+    <button id="show-login-button">Show Login</button>
+    <div class="login-container login-container-hide" id="login-container">
+        <h2>ingresa a nuestro sistema</h2>
+        <form id="login-form" action="">
+            <div>
+                <p>usuario</p>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <p>contraseña</p>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <button id="login-button">iniciar sesion</button>
+                <button id="cancel-button">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script">
 </body>
 </html>
