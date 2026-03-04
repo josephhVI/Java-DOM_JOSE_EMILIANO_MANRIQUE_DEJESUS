@@ -50,6 +50,6 @@
             </div>
         </form>
     </div>
-    <script src="./script">
+    <script src="./script"></script>
 </body>
 </html>
